@@ -31,7 +31,7 @@ Transform:
   m_Children:
   - {fileID: 3180155581369341553}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &3393966139318189458
 SphereCollider:
@@ -107,7 +107,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -876546973899608171, guid: 0f1ae54382a1ea64fb7101087c2888dc, type: 3}
+  - {fileID: 2100000, guid: c742ce9e08eb53f44a58b9774efed467, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
