@@ -78,6 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a51946aeaf0a72248aad05e839a897c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  needToSpawn: 0
   typeOfBoss: 0
   health: 0
   damage: 0
@@ -85,6 +86,8 @@ MonoBehaviour:
   speedOfBullet: 2.5
   speed: 0
   heightOfHealthBar: 0
+  startHealth: 0
+  startDamage: 0
   player: {fileID: 0}
   bossAnimator: {fileID: 0}
   firePoint: {fileID: 7874988852906315205}
@@ -92,7 +95,9 @@ MonoBehaviour:
   Paths: {fileID: 0}
   myPath: {fileID: 0}
   spawnPoints: {fileID: 0}
+  firePoints: []
   level: {fileID: 0}
+  healthText: {fileID: 0}
   bigBulletPrefab: {fileID: 0}
   chestPrefab: {fileID: 0}
   attackShipPrefab: {fileID: 0}
@@ -5199,7 +5204,7 @@ PrefabInstance:
     - target: {fileID: -7635826562936255635, guid: fdcce0a9d43344e45bb0eb2de03f1610, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 4874126678125670354, guid: 93c29b811924fcc42be384ad69cb5a02, type: 3}
+      objectReference: {fileID: -6922793697723135513, guid: 93c29b811924fcc42be384ad69cb5a02, type: 3}
     - target: {fileID: 919132149155446097, guid: fdcce0a9d43344e45bb0eb2de03f1610, type: 3}
       propertyPath: m_Name
       value: leg_Prototype_2
@@ -5279,7 +5284,7 @@ PrefabInstance:
     - target: {fileID: -7635826562936255635, guid: fdcce0a9d43344e45bb0eb2de03f1610, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 4874126678125670354, guid: 93c29b811924fcc42be384ad69cb5a02, type: 3}
+      objectReference: {fileID: -6922793697723135513, guid: 93c29b811924fcc42be384ad69cb5a02, type: 3}
     - target: {fileID: 919132149155446097, guid: fdcce0a9d43344e45bb0eb2de03f1610, type: 3}
       propertyPath: m_Name
       value: leg_Prototype_1
@@ -5359,7 +5364,7 @@ PrefabInstance:
     - target: {fileID: -7635826562936255635, guid: fdcce0a9d43344e45bb0eb2de03f1610, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 4874126678125670354, guid: 93c29b811924fcc42be384ad69cb5a02, type: 3}
+      objectReference: {fileID: -6922793697723135513, guid: 93c29b811924fcc42be384ad69cb5a02, type: 3}
     - target: {fileID: 919132149155446097, guid: fdcce0a9d43344e45bb0eb2de03f1610, type: 3}
       propertyPath: m_Name
       value: leg_Prototype
@@ -5447,7 +5452,7 @@ PrefabInstance:
     - target: {fileID: -7635826562936255635, guid: fdcce0a9d43344e45bb0eb2de03f1610, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 4874126678125670354, guid: 93c29b811924fcc42be384ad69cb5a02, type: 3}
+      objectReference: {fileID: -6922793697723135513, guid: 93c29b811924fcc42be384ad69cb5a02, type: 3}
     - target: {fileID: 919132149155446097, guid: fdcce0a9d43344e45bb0eb2de03f1610, type: 3}
       propertyPath: m_Name
       value: leg_Prototype_3
@@ -5527,7 +5532,7 @@ PrefabInstance:
     - target: {fileID: -7635826562936255635, guid: fdcce0a9d43344e45bb0eb2de03f1610, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 4874126678125670354, guid: 93c29b811924fcc42be384ad69cb5a02, type: 3}
+      objectReference: {fileID: -6922793697723135513, guid: 93c29b811924fcc42be384ad69cb5a02, type: 3}
     - target: {fileID: 919132149155446097, guid: fdcce0a9d43344e45bb0eb2de03f1610, type: 3}
       propertyPath: m_Name
       value: leg_Prototype_6
@@ -5607,7 +5612,7 @@ PrefabInstance:
     - target: {fileID: -7635826562936255635, guid: fdcce0a9d43344e45bb0eb2de03f1610, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 4874126678125670354, guid: 93c29b811924fcc42be384ad69cb5a02, type: 3}
+      objectReference: {fileID: -6922793697723135513, guid: 93c29b811924fcc42be384ad69cb5a02, type: 3}
     - target: {fileID: 919132149155446097, guid: fdcce0a9d43344e45bb0eb2de03f1610, type: 3}
       propertyPath: m_Name
       value: leg_Prototype_5
@@ -5687,7 +5692,7 @@ PrefabInstance:
     - target: {fileID: -7635826562936255635, guid: fdcce0a9d43344e45bb0eb2de03f1610, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 4874126678125670354, guid: 93c29b811924fcc42be384ad69cb5a02, type: 3}
+      objectReference: {fileID: -6922793697723135513, guid: 93c29b811924fcc42be384ad69cb5a02, type: 3}
     - target: {fileID: 919132149155446097, guid: fdcce0a9d43344e45bb0eb2de03f1610, type: 3}
       propertyPath: m_Name
       value: leg_Prototype_7
@@ -5767,7 +5772,7 @@ PrefabInstance:
     - target: {fileID: -7635826562936255635, guid: fdcce0a9d43344e45bb0eb2de03f1610, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 4874126678125670354, guid: 93c29b811924fcc42be384ad69cb5a02, type: 3}
+      objectReference: {fileID: -6922793697723135513, guid: 93c29b811924fcc42be384ad69cb5a02, type: 3}
     - target: {fileID: 919132149155446097, guid: fdcce0a9d43344e45bb0eb2de03f1610, type: 3}
       propertyPath: m_Name
       value: leg_Prototype_4
