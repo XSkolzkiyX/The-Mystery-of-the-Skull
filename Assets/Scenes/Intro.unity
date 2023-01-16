@@ -116829,7 +116829,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6757653337744355128, guid: 7a0719587cf2ceb4eb472852caaddb17, type: 3}
       propertyPath: waveHeight
-      value: 0.0015
+      value: 0.0005
       objectReference: {fileID: 0}
     - target: {fileID: 6757653337744355128, guid: 7a0719587cf2ceb4eb472852caaddb17, type: 3}
       propertyPath: waveLength
