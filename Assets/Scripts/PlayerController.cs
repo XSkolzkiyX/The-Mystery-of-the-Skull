@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     public Transform Cannon, target, canvas;
     public GameObject bulletPrefab, coinAnim, radiusImage, sinkingShipPrefab, playerCanvas, tipText;
     public Slider slider;
-    public Text coinText;
+    public TextMeshProUGUI coinText;
     public TextMeshProUGUI healthText;
     public AudioSource pickUpCoinSound, ExplosionSound, HitSound, ShootSound;
     public Animator crossFade;
